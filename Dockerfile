@@ -5,7 +5,8 @@ RUN apk add --no-cache --virtual build-dependencies \
     build-base \
     py3-setuptools \
     curl-dev \
-    expat-dev
+    expat-dev \
+    python3-dev
 
 RUN git clone --depth 1 https://github.com/KLayout/klayout.git /klayout
 
