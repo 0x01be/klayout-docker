@@ -13,7 +13,8 @@ RUN apk add --no-cache --virtual klayout-build-dependencies \
     qt5-qtmultimedia-dev \
     qt5-qtxmlpatterns-dev \
     qt5-qtsvg-dev \
-    qt5-qttools-dev
+    qt5-qttools-dev \
+    libexecinfo-dev
 
 RUN git clone --depth 1 https://github.com/KLayout/klayout.git /klayout
 
