@@ -16,7 +16,8 @@ RUN apk add --no-cache --virtual klayout-build-dependencies \
     qt5-qttools-dev \
     libexecinfo-dev
 
-RUN git clone --depth 1 https://github.com/KLayout/klayout.git /klayout
+ENV KLAYOUT_REVISION master
+RUN git clone --depth 1 --branch ${KLAYOUT_REVISION} https://github.com/KLayout/klayout.git /klayout
 
 WORKDIR /klayout
 
