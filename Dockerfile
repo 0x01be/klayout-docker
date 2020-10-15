@@ -16,6 +16,8 @@ RUN python3 setup.py install --prefix=/opt/klayout
 
 FROM alpine
 
+COPY --from=build /opt/klayout/ /opt/klayout/
+
 RUN apk add --no-cache --virtual klayout-runtime-dependencies \
     python3 \
     expat \
