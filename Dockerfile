@@ -13,7 +13,8 @@ RUN apk add --no-cache --virtual klayout-runtime-dependencies \
     qt5-qtxmlpatterns \
     qt5-qtsvg \
     qt5-qttools \
-    ruby-libs
+    ruby-libs \
+    mesa-dri-swrast
 
 USER xpra
 
