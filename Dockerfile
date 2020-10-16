@@ -8,7 +8,12 @@ USER root
 RUN apk add --no-cache --virtual klayout-runtime-dependencies \
     python3 \
     expat \
-    curl
+    curl \
+    qt5-qtbase \
+    qt5-qtxmlpatterns \
+    qt5-qtsvg \
+    qt5-qttools \
+    ruby-libs
 
 USER xpra
 
