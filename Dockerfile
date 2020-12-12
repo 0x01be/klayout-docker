@@ -18,7 +18,7 @@ RUN apk add --no-cache --virtual klayout-build-dependencies \
     qt5-qtsvg-dev \
     qt5-qttools-dev \
     libexecinfo-dev &&\
-    git clone --depth 1 --branch ${KLAYOUT_REVISION} https://github.com/KLayout/klayout.git /klayout
+    git clone --depth 1 --branch ${REVISION} https://github.com/KLayout/klayout.git /klayout
 
 RUN mkdir -p /opt/klayout/bin &&\
     python3 setup.py install --prefix=/opt/klayout &&\
